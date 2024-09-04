@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && parcel build src/index.html",
+    "build": "parcel build src/index.html",
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js"
   },
   "keywords": [],
@@ -11,11 +11,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@parcel/core": "^2.12.0",
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
-    "sharp": "^0.31.3",
-    "rimraf": "^5.0.0"
-  },
-  "dependencies": {}
+    "rimraf": "^5.0.0",
+    "sharp": "^0.31.3"
+  }
 }
