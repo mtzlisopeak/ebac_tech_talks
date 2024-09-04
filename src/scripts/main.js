@@ -16,11 +16,12 @@ function contagemRegressiva(){
     const minutos = Math.floor((diferencaTempo % horasEmMs) / minutosEmMs);
     const segundos = Math.floor((diferencaTempo % minutosEmMs) / segundosEmMs);
 
-    document.querySelector('#contador').innerHTML = 
-        `Faltam: ${dias} dias ${horas} horas ${minutos} minutos ${segundos} segundos`;
-
-    if (diferencaTempo < 0){
-        document.querySelector('.contador').innerHTML = "O evento ja começou";
+    if (diferencaTempo < 0) {
+        document.querySelector('#contador').innerHTML = "O evento já começou";
+        clearInterval(att);
+    } else {
+        document.querySelector('#contador').innerHTML = 
+            `Faltam: ${dias} dias ${horas} horas ${minutos} minutos ${segundos} segundos`;
     }
 
 }
