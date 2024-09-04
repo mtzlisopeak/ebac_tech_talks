@@ -1,11 +1,22 @@
 @use "hero";
+@use "components/infos_bar";
+@use "components/button";
+@use "event";
+@use "variables.scss" as *;
 
 * {
     margin: 0;
     border: none;
     padding: 0;
+    color: $textColor;
+    list-style: none;
+    text-decoration: none;
     font-family: "Roboto", sans-serif;
-    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .container {

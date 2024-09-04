@@ -1,9 +1,13 @@
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    min-height: 100vh;
+    background: linear-gradient(rgba(#000, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 64px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__text {
         margin: 64px 0;
